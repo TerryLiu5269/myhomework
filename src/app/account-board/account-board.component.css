@@ -1,0 +1,49 @@
+p{
+  margin: 0;
+}
+
+.myContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 5%;
+  padding: 0 8%;
+}
+
+.accountLeft {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 50%;
+}
+
+.accountRight {
+  width: 35%;
+}
+
+.accountArea{
+  border: 1px solid rgb(255, 166, 0);
+  justify-content: space-between;
+
+}
+
+.moneyShowArea {
+  border: 1px solid rgb(255, 166, 0);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 5%;
+  font-size: 1.5em;
+  color: white;
+}
+
+.moneyShowArea p{
+  margin-left: 3%;
+}
+
+.moneyText {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 2.5em;
+  color: white;
+}

@@ -1,0 +1,20 @@
+<div class="myContainer">
+  <div class="accountLeft">
+    <div class="accountArea d-flex">
+      <app-account [title]="accountTW"></app-account>
+      <app-account-sub *ngFor="let el of allAccount" [title]="el"></app-account-sub>
+    </div>
+    <div class="moneyShowArea">
+      <p class="">臺幣資產總額</p>
+      <i *ngIf="eyesState.icon1" class="fa-solid fa-eye ml-4" (click)="eyesChange()"></i>
+      <i *ngIf="eyesState.icon2" class="fa-solid fa-eye-slash ml-4" (click)="eyesChange()"></i>
+    </div>
+    <div class="moneyText">
+      <p *ngIf="showMoneyState.open">$25,999</p>
+      <p *ngIf="showMoneyState.close">-</p>
+    </div>
+  </div>
+  <div class="accountRight">
+    <img src="./../../assets/image/card.png" alt="">
+  </div>
+</div>
