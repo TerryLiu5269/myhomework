@@ -7,6 +7,8 @@ import { NavComponent } from './nav/nav.component';
 import { AccountBoardComponent } from './account-board/account-board.component';
 import { AccountComponent } from './account/account.component';
 import { AccountSubComponent } from './account-sub/account-sub.component';
+import { ListBoardComponent } from './list-board/list-board.component';
+import { ListComponent } from './list/list.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { AccountSubComponent } from './account-sub/account-sub.component';
     NavComponent,
     AccountBoardComponent,
     AccountComponent,
-    AccountSubComponent
+    AccountSubComponent,
+    ListBoardComponent,
+    ListComponent
   ],
   imports: [
     BrowserModule,
