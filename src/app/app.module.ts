@@ -10,6 +10,7 @@ import { AccountSubComponent } from './account-sub/account-sub.component';
 import { ListBoardComponent } from './list-board/list-board.component';
 import { ListComponent } from './list/list.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,11 +19,11 @@ import { ListComponent } from './list/list.component';
     AccountComponent,
     AccountSubComponent,
     ListBoardComponent,
-    ListComponent
+    ListComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

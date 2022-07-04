@@ -11,7 +11,7 @@ export class AccountBoardComponent implements OnInit {
   allAccount:[string,string] =["外幣帳戶","數位帳戶"]
 
   eyesState = { icon1: true, icon2: false };
-  showMoneyState = {open: true, close: false}
+  showMoneyState = {open: true, close: false};
 
   constructor() { }
 

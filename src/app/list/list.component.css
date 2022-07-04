@@ -1,0 +1,30 @@
+p {
+  margin: 0;
+  color: #525252;
+}
+
+.myContainer {
+  display: flex;
+  align-items: center;
+  background-color: rgb(234, 234, 234);
+  border-bottom: 3px solid #25D482;
+  width: 100%;
+  height: 35px;
+  margin: 1% 0;
+  border-radius: 60px;
+  padding: 0 2%;
+}
+
+p:nth-child(2) {
+  margin-left: 1.5%;
+  flex-grow: 1;
+}
+
+p:nth-child(3) {
+  /* margin-left: 80.5%; */
+}
+
+i {
+  margin-left: 0.5%;
+  color: #25D482;
+}
