@@ -9,6 +9,8 @@ import { AccountComponent } from './account/account.component';
 import { AccountSubComponent } from './account-sub/account-sub.component';
 import { ListBoardComponent } from './list-board/list-board.component';
 import { ListComponent } from './list/list.component';
+import { NgChartsModule } from 'ng2-charts';
+import { MychartComponent } from './mychart/mychart.component';
 
 
 @NgModule({
@@ -20,10 +22,12 @@ import { ListComponent } from './list/list.component';
     AccountSubComponent,
     ListBoardComponent,
     ListComponent,
+    MychartComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    NgChartsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
