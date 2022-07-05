@@ -7,8 +7,8 @@
       </div>
       <div class="buttonArea d-flex">
         <div class="buttonBGCtoRight" [ngClass]="status ? 'buttonBGC' : 'buttonBGCtoRight'"></div>
-        <button (click)="getDataChange(7)" (click)="clickEvent()">近7天</button>
-        <button (click)="getDataChange(28)" (click)="clickEvent()">近28天</button>
+        <button (click)="getDataChange(7);clickEvent();get7day()">近7天</button>
+        <button (click)="getDataChange(28);clickEvent();get28day()">近28天</button>
       </div>
     </div>
     <div class="topAreaSub d-flex">
@@ -20,6 +20,6 @@
     </div>
   </div>
   <div class="rightArea">
-    <app-mychart></app-mychart>
+    <app-mychart [doughnutChData]="doughnutData"></app-mychart>
   </div>
 </div>

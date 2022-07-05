@@ -7,28 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListBoardComponent implements OnInit {
   dateSrc: { date: string, detail: string, money: number }[] = [];
-  // dateSrc = [
-  //   { date: '06/19', detail: '手續費', money: -15 },
-  //   { date: '06/19', detail: '委帶入', money: 1500 },
-  //   { date: '06/17', detail: '轉帳存', money: 1500 },
-  //   { date: '06/12', detail: '現金提', money: -3000 },
-  //   { date: '06/10', detail: '現金提', money: -5000 },
-  //   { date: '06/10', detail: '手續費', money: -15 },
-  //   { date: '06/09', detail: '現金提', money: -1500 },
-  //   { date: '06/07', detail: '轉帳存', money: 55000 },
-  //   { date: '06/06', detail: '手續費', money: -15 },
-  //   { date: '06/03', detail: '委帶入', money: 20000 },
-  //   { date: '06/01', detail: '申購扣', money: -20000 },
-  //   { date: '05/31', detail: '轉帳存', money: 15000 },
-  //   { date: '05/26', detail: '現金提', money: -3000 },
-  //   { date: '05/17', detail: '現金提', money: -5000 },
-  //   { date: '05/16', detail: '手續費', money: -15 },
-  //   { date: '05/15', detail: '手續費', money: -15 },
-  //   { date: '05/10', detail: '轉帳存', money: 8000 },
-  //   { date: '05/10', detail: '手續費', money: -15 },
-  //   { date: '05/05', detail: '現金提', money: -1000 },
-  // ]
+
   status: boolean = true;
+
+  doughnutData: number[] = [350, 450, 100, 250]
 
   constructor() { }
 
@@ -74,6 +56,15 @@ export class ListBoardComponent implements OnInit {
 
   clickEvent() {
     this.status = !this.status;
+  }
+
+  get7day(){
+    this.doughnutData = [350, 450, 100, 250]
+    console.log('get7day====>',this.doughnutData)
+  }
+  get28day(){
+    this.doughnutData = [1650, 250, 2250, 250]
+    console.log('get28day====>',this.doughnutData)
   }
 
 }
